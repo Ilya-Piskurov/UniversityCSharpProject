@@ -1,6 +1,6 @@
 ﻿namespace TSPP_ShoesSolution
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -53,6 +53,7 @@
             this.AuthButton.TabIndex = 0;
             this.AuthButton.Text = "Log In";
             this.AuthButton.UseVisualStyleBackColor = false;
+            this.AuthButton.Click += new System.EventHandler(this.AuthButton_Click);
             // 
             // ArticleTextBox
             // 
@@ -147,6 +148,7 @@
             this.OurTeam.TabIndex = 8;
             this.OurTeam.Text = "Our Team";
             this.OurTeam.UseVisualStyleBackColor = false;
+            this.OurTeam.Click += new System.EventHandler(this.OurTeam_Click);
             // 
             // InfoButton
             // 
@@ -158,6 +160,7 @@
             this.InfoButton.TabIndex = 9;
             this.InfoButton.Text = "INFO";
             this.InfoButton.UseVisualStyleBackColor = false;
+            this.InfoButton.Click += new System.EventHandler(this.InfoButton_Click);
             // 
             // ArticleLabel
             // 
@@ -181,7 +184,7 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Shoes Shop";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -199,7 +202,7 @@
             this.Controls.Add(this.ShowAllButton);
             this.Controls.Add(this.ArticleTextBox);
             this.Controls.Add(this.AuthButton);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Shoes Shop";
             this.ResumeLayout(false);
             this.PerformLayout();
