@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TSPP_ShoesSolution.source.model
 {
-    static class ServerAccess
+    static public class ServerAccess
     {
         static public string connectionString = "Server=127.0.0.1;Port=5432;Database=shoesShop;User Id=postgres;Password=root";
     }

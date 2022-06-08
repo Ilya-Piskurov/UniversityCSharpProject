@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TSPP_ShoesSolution.source.model
 {
-    static class AuthManager
+    static public class AuthManager
     {
         static public bool Authorization()
         {

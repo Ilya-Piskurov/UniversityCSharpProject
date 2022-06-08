@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TSPP_ShoesSolution.source.model
 {
-    static class ShoesManager
+    static public class ShoesManager
     {
         static public List<string> ReadDataOfShoes()
         {
