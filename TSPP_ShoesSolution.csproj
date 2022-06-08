@@ -9,11 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MySql.Data" Version="8.0.29" />
+    <Folder Include="source\controller\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="source\controller\" />
+    <PackageReference Include="Aspose.Words" Version="22.6.0" />
+    <PackageReference Include="Npgsql" Version="6.0.4" />
   </ItemGroup>
 
   <ItemGroup>

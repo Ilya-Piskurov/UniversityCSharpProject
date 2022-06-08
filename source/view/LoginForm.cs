@@ -13,14 +13,17 @@ namespace TSPP_ShoesSolution.source.view
 {
     public partial class LoginForm : Form
     {
-        public ShoesShopUser loginUser;
         public LoginForm()
         {
             InitializeComponent();
-            loginUser = new ShoesShopUser();
 
             passwordBox.PasswordChar = '*';
-            passwordBox.MaxLength = 12;
+            passwordBox.MaxLength = 10;
+            loginBox.MaxLength = 10;
+
+            ShoesShopUser.login = "";
+            ShoesShopUser.password = "";
+            ShoesShopUser.adminRights = false;
         }
 
         private void loginButton_Click(object sender, EventArgs e)
@@ -37,10 +40,19 @@ namespace TSPP_ShoesSolution.source.view
                 return;
             }
 
-            loginUser.login = loginBox.Text;
-            loginUser.password = passwordBox.Text;
+            ShoesShopUser.login = loginBox.Text;
+            ShoesShopUser.password = passwordBox.Text;
+            ShoesShopUser.adminRights = AuthManager.Authorization();
 
-            //TODO login process;
+            if (ShoesShopUser.adminRights)
+            {
+                MessageBox.Show("Login Successfull");
+            } else
+            {
+                MessageBox.Show("Login Failed");
+            }
+
+            this.Close();
         }
     }
 }

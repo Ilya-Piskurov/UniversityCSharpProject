@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace TSPP_ShoesSolution.source.model
 {
-    static public class ShoesShopUser
+    static class ServerAccess
     {
-        static public string login = "";
-        static public string password = "";
-        static public bool adminRights = false;
+        static public string connectionString = "Server=127.0.0.1;Port=5432;Database=shoesShop;User Id=postgres;Password=root";
     }
 }
